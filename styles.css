@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'font-all-default';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-logo';
+    src: url('./fonts/Pacifico/Pacifico-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+    color: #4b0082;
+}
+
+@font-face {
+    font-family: 'font-content1';
+    src: url('./fonts/Rubik_Scribble/RubikScribble-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-all-default2';
+    src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{;
+    background-size:1000%;
+    animation: change 15s ease-in-out infinite;
+    font-family: font-all-default;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* ================== header =============== */
+.logo-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.font-logo{
+    font-family: "font-logo", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 15px;
+
+}
+
+nav ul li a {
+    background-color: rgba(83, 33, 190, 0.2);
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0,5, 0, 0.4);
+    transition: 0.3s;
+    box-shadow: 0 0 6px black;
+}
+
+/* ============== Hero sections ============ */
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background.jpg');
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    overflow: hidden;
+    text-align: left;
+}
+
+.hero-item{
+    text-align: left;
+}
+
+/* Heading Styles */
+.hero-heading {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0.8, 0.4);
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 0.9rem;
+}
+.txt-gradient{
+    background-image: linear-gradient(45deg, red, yellow, green, yellow); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.font-content1{
+    font-family: font-content1
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #24f815;
+    color: #000000;
+    box-shadow: 0 0 10px #24f815;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    color: #24f815;
+    transition: 0.7s ease;
+}
+
+/* Social Media Icons Styling */
+.scm-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #24f815;
+    border-radius: 50%;
+    color: #24f815;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.scm-icon:hover {
+    background-color: #24f815;
+    color: #000000;
+    box-shadow: 0 0 10px #24f815;
+    transition: 0.7s ease;
+}
+
+
+.typing {
+    color: white;
+    display: inline-block;
+    border-right: 4px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    animation: typing 3s steps(20, end) forwards, blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}

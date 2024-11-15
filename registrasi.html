@@ -1,0 +1,141 @@
+<section id="registration" class="container mx-auto py-16 px-4 bc">
+    <h2 class="text-3xl font-semibold text-center mb-8">Registrasi</h2>
+    <div class="bg-white shadow-lg rounded-lg max-w-lg mx-auto p-8">
+        <form action="" method="POST" class="space-y-4">
+            <!-- Nama Lengkap -->
+            <div>
+                <label for="name" class="block text-gray-700">Nama Lengkap</label>
+                <input type="text" id="name" name="name" class="w-full p-2.5 text-black border border-gray-300 
+                                transition duration-500 ease-in-out 
+                                hover:bg-gray-100 hover:text-black hover:font-medium 
+                                focus:outline-none focus:border-b-4 focus:border-gray-500" placeholder="Nama Lengkap">
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2.5 text-black border border-gray-300 
+                                transition duration-500 ease-in-out 
+                                hover:bg-gray-100 hover:text-black hover:font-medium 
+                                focus:outline-none focus:border-b-4 focus:border-gray-500" placeholder="Email">
+            </div>
+            <!-- Tanggal Lahir -->
+            <div>
+                <label for="dob" class="block text-gray-700">Tanggal Lahir</label>
+                <input type="date" id="dob" name="dob" class="w-full p-2.5 text-gray-700 border border-gray-300 
+                                transition duration-500 ease-in-out 
+                                hover:bg-gray-100 hover:text-black hover:font-medium 
+                                focus:outline-none focus:border-b-4 focus:border-gray-500">
+            </div>
+            <!-- Gender -->
+            <div>
+                <label for="gender" class="block text-gray-700">Jenis Kelamin</label>
+                <select id="gender" name="gender" class="w-full p-2.5 text-gray-700 border border-gray-300 
+                                transition duration-500 ease-in-out 
+                                hover:bg-gray-100 hover:text-black hover:font-medium 
+                                focus:outline-none focus:border-b-4 focus:border-gray-500">
+                    <option class="text-gray-700">--Pilihan--</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <!-- pensan -->
+            <div>
+                <label for="message" class="block text-gray-700">Pesan</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-2.5 text-gray-700 border border-gray-300 
+                                transition duration-500 ease-in-out 
+                                hover:bg-gray-100 hover:text-black hover:font-medium 
+                                focus:outline-none focus:border-b-4 focus:border-gray-500"
+                    placeholder="Tulis pesan..."></textarea>
+            </div>
+            <!-- Status Pekerjaan -->
+            <div class="mt-4">
+                <label class="block text-gray-700 mb-2">Status Pekerjaan</label>
+                <div class="grid md:flex md:items-center md:space-x-4 space-y-2 md:space-y-0 mt-2">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="job_status" value="Pelajar" class="text-blue-600">
+                        <span class="text-gray-700">Pelajar</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="job_status" value="Karyawan" class="text-blue-600">
+                        <span class="text-gray-700">Karyawan</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="job_status" value="Pengusaha" class="text-blue-600">
+                        <span class="text-gray-700">Pengusaha</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="job_status" value="Lainnya" class="text-blue-600">
+                        <span class="text-gray-700">Lainnya</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Checkbox Persetujuan -->
+            <div class="flex items-center space-x-2">
+                <input type="checkbox" id="terms" name="terms" class="form-checkbox">
+                <label for="terms" class="text-gray-700">Saya menyetujui
+                    <a href="#" class="text-blue-600 underline">syarat dan ketentuan</a>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Kirim Formulir"
+                    class="w-full bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 ease-out hover:bg-cyan-300 hover:shadow-xl hover:-translate-y-1 transform">
+            </div>
+        </form>
+    </div>
+</section>
+
+<article>
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-green-300 bg-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105">
+                    <h3 class="text-xl font-bold mb-4">List Produk</h3>
+                    <div class="mb-4">
+                        <img src="images/image-info.jpg" alt="Gambar" class="w-full h-48 object-cover rounded-md">
+                    </div>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                        est ipsa
+                        veniam laborum magnam aut neque officiis error voluptatum in quaerat magni sunt aperiam
+                        unde itaque,
+                        quis incidunt ducimus iste..</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105">
+                    <h3 class="text-xl font-bold mb-4">Berita Teknologi</h3>
+                    <div class="mb-4">
+                        <img src="images/image-info.jpg" alt="Gambar" class="w-full h-48 object-cover rounded-md">
+                    </div>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iste
+                        rem
+                        laudantium possimus ipsum, placeat totam suscipit molestiae esse ut sed et commodi,
+                        nulla omnis
+                        molestias quas dolorem officia odit!</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4">Loker</h3>
+                    <div class="mb-4">
+                        <img src="images/image-info.jpg" alt="Gambar" class="w-full h-48 object-cover rounded-md">
+                    </div>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+                        recusandae
+                        excepturi soluta molestias sequi voluptates reiciendis eum assumenda! Laborum qui nam
+                        voluptatibus
+                        deserunt quaerat minima ab non eaque excepturi rem.
+                        <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam vero aliquam quia
+                        quo odio
+                        omnis illum! Veritatis ullam velit autem, quam illo laboriosam beatae ex aliquid,
+                        mollitia repellat
+                        quos labore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
